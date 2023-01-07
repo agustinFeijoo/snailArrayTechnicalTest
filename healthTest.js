@@ -7,11 +7,14 @@ snail = function(n) {
   }
 
   for(i=n;i>0;i=i-2){
-    
+    // startPosition is not a coordinate, is more like a code because you know if startPosition=0 in down() it will be the coordinate [length-1,1] because that is the first time that down() writes a value
     right(i,arr,startPosition);
+    // does the snail shell drawing end with a left turn?
     if(i>1){
       down(i-1,arr,startPosition);
-      left(i-1,arr,startPosition);}
+      left(i-1,arr,startPosition);
+    }
+      // does the snail shell drawing end with a up turn?
     if(i>2)
       up(i-2,arr,startPosition);
     startPosition++;
