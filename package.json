@@ -5,7 +5,7 @@
   "main": "healthTest.js",
   "scripts": {
     "test": "jest",
-    "test:coverage":"jest --coverage"
+    "test:coverage": "jest --coverage"
   },
   "type": "module",
   "repository": {
